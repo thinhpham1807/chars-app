@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             // app bar
             Padding(
-              padding: const EdgeInsets.fromLTRB(45, 30, 50, 25),
+              padding: const EdgeInsets.fromLTRB(45, 30, 40, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -30,12 +29,15 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         'Welcome \nback, Tina 👋',
                         style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
                           fontFamily: 'Andika New Basic',
-                          color: Color(0xff0f4c75),
-                          letterSpacing: 0.4,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                          height: 1.25, // equivalent to line-height: 25px
+                          letterSpacing: -0.02,
+                          color: Color(0xFF0F4C75),
                         ),
+                        textAlign: TextAlign.start,
                       ),
                     ],
                   ),
@@ -49,27 +51,42 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 25),
+            const SizedBox(height: 30),
 
             // search bar
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple[100],
-                  borderRadius: BorderRadius.circular(50),
+                  color: const Color(0xFFFFFFFF),
                   border: Border.all(
-                    color: const Color.fromARGB(
-                        255, 206, 229, 251), //rgba(206, 229, 251, 1)
-                    width: 2,
+                    color: const Color(0xFFCEE5FB),
+                    width: 1,
                   ),
-                  boxShadow: const [
+                  boxShadow: [
                     BoxShadow(
-                      color: Color.fromARGB(255, 206, 229, 251),
-                      offset: Offset(0, 8),
-                      blurRadius: 10,
+                      offset: const Offset(-1.0, -1.0),
+                      blurRadius: 1.0,
+                      color: Colors.white.withOpacity(0.9),
+                    ),
+                    BoxShadow(
+                      offset: const Offset(-4.0, -5.0),
+                      blurRadius: 7.0,
+                      color: Colors.white.withOpacity(0.8),
+                    ),
+                    const BoxShadow(
+                      offset: Offset(1.0, 1.0),
+                      blurRadius: 4.0,
+                      color: Color.fromRGBO(83, 131, 164, 0.4),
+                    ),
+                    const BoxShadow(
+                      offset: Offset(4.0, 5.0),
+                      blurRadius: 11.0,
+                      color: Color.fromRGBO(158, 193, 217, 0.7),
                     ),
                   ],
+                  borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
@@ -80,6 +97,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
+            const SizedBox(height: 40),
+
             // fact card and continous study
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -134,9 +154,13 @@ class _HomePageState extends State<HomePage> {
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      Image.asset(
-                        'lib/resources/images/marie_curie.jpeg',
-                        height: 20,
+                      Row(
+                        children: [
+                          Image.asset(
+                            'lib/resources/images/marie_curie.png',
+                            height: 50,
+                          ),
+                        ],
                       ),
                     ],
                   ),
