@@ -155,10 +155,27 @@ class _HomePageState extends State<HomePage> {
                         textAlign: TextAlign.center,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Image.asset(
                             'lib/resources/images/marie_curie.png',
-                            height: 50,
+                            height: 70,
+                          ),
+                          const SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Marie Curie là nhà khoa học tìm ra Polonium (Po) số hiệu nguyên tố 84.',
+                              softWrap: true,
+                              style: TextStyle(
+                                fontFamily: 'Archivo',
+                                fontStyle: FontStyle.normal,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14,
+                                height: 1.64,
+                                letterSpacing: 0.03,
+                                color: Color(0xFF0F4C75),
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -216,6 +233,43 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
+                  // child: Column(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //   children: [
+                  //     ClipRRect(
+                  //       borderRadius: BorderRadius.circular(15),
+                  //       child: Image.asset(
+                  //         'lib/resources/images/hoaaa.jpeg',
+                  //         height: 80,
+                  //         fit: BoxFit.cover,
+                  //       ),
+                  //     ),
+                  //     const Padding(
+                  //       padding: EdgeInsets.only(right: 50),
+                  //       children: [
+                  //         Text(
+                  //           'TIẾP TỤC\nHỌC BÀI',
+                  //           style: TextStyle(
+                  //             fontFamily: 'Archivo',
+                  //             fontWeight: FontWeight.w800,
+                  //             fontSize: 17,
+                  //             height: 1.41, // equivalent to line-height: 24px
+                  //             letterSpacing: -0.02,
+                  //             color: Colors.white,
+                  //             shadows: [
+                  //               Shadow(
+                  //                 color: Colors.black12,
+                  //                 offset: Offset(0, 4),
+                  //                 blurRadius: 4,
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //         Icon(Icons.play_arrow, color: Colors.white)
+                  //       ],
+                  //     ),
+                  //   ],
+                  // ),
                 ),
               ],
             )

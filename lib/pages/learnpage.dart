@@ -9,23 +9,22 @@ class LearnPage extends StatefulWidget {
 }
 
 class _LearnPageState extends State<LearnPage> {
-
 // Create a list of Lesson objects to hold the data for each lesson
-List<Lesson> lessons = [
-  Lesson(
-    title: 'Lesson 1',
-    description: 'Introduction to Chinese characters',
-  ),
-  Lesson(
-    title: 'Lesson 2',
-    description: 'Basic strokes and radicals',
-  ),
-  Lesson(
-    title: 'Lesson 3',
-    description: 'Common characters and their meanings',
-  ),
-  // Add more lessons as needed
-];
+  List<Lesson> lessons = [
+    Lesson(
+      title: 'Lesson 1',
+      description: 'Introduction to Chinese characters',
+    ),
+    Lesson(
+      title: 'Lesson 2',
+      description: 'Basic strokes and radicals',
+    ),
+    Lesson(
+      title: 'Lesson 3',
+      description: 'Common characters and their meanings',
+    ),
+    // Add more lessons as needed
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -60,17 +59,15 @@ List<Lesson> lessons = [
                     size: 45,
                     color: Color(0xff0f4c75),
                   ),
-
                 ],
-                
+
                 // List view of all the lessons
               ),
             ),
-
             const SizedBox(height: 25),
-            Text(
+            const Text(
               'Lessons',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Andika New Basic',
@@ -80,7 +77,7 @@ List<Lesson> lessons = [
             ),
 
             const SizedBox(height: 25),
-            Container(
+            SizedBox(
                 height: 210,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -89,31 +86,30 @@ List<Lesson> lessons = [
                       width: 210,
                       margin: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 240, 245, 249),
-                        borderRadius: BorderRadius.circular(15),
-                        boxShadow: const [
-                          BoxShadow(
-                            offset: Offset(-7, -6),
-                            blurRadius: 7,
-                            color: Color.fromRGBO(255, 255, 255, 0.6),
-                          ),
-                          BoxShadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 2,
-                            color: Color.fromRGBO(255, 255, 255, 0.4),
-                          ),
-                          BoxShadow(
-                            offset: Offset(1, 2),
-                            blurRadius: 4,
-                            color: Color(0xFFA5CDE8),
-                          ),
-                          BoxShadow(
-                            offset: Offset(4, 4),
-                            blurRadius: 8,
-                            color: Color.fromRGBO(143, 181, 206, 0.75),
-                          ),
-                        ]
-                      ),
+                          color: const Color.fromARGB(255, 240, 245, 249),
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: const [
+                            BoxShadow(
+                              offset: Offset(-7, -6),
+                              blurRadius: 7,
+                              color: Color.fromRGBO(255, 255, 255, 0.6),
+                            ),
+                            BoxShadow(
+                              offset: Offset(-2, -2),
+                              blurRadius: 2,
+                              color: Color.fromRGBO(255, 255, 255, 0.4),
+                            ),
+                            BoxShadow(
+                              offset: Offset(1, 2),
+                              blurRadius: 4,
+                              color: Color(0xFFA5CDE8),
+                            ),
+                            BoxShadow(
+                              offset: Offset(4, 4),
+                              blurRadius: 8,
+                              color: Color.fromRGBO(143, 181, 206, 0.75),
+                            ),
+                          ]),
                       child: Column(
                         children: [
                           // Lesson title
@@ -158,8 +154,7 @@ List<Lesson> lessons = [
                       ),
                     );
                   }).toList(),
-                  )
-            ),
+                )),
           ],
         ),
       ),
