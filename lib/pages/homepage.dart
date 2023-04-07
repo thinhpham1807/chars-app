@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
 
             // search bar
             Padding(
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
 
             // fact card and continous study
             Row(
@@ -212,70 +212,160 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   child: Column(
-                    children: const [
-                      Text(
-                        'TIẾP TỤC\nHỌC BÀI',
-                        style: TextStyle(
-                          fontFamily: 'Archivo',
-                          fontWeight: FontWeight.w800,
-                          fontSize: 17,
-                          height: 1.41, // equivalent to line-height: 24px
-                          letterSpacing: -0.02,
-                          color: Colors.white,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black12,
-                              offset: Offset(0, 4),
-                              blurRadius: 4,
-                            ),
-                          ],
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                          'lib/resources/images/hoaaa.jpeg',
+                          height: 90,
+                          fit: BoxFit.cover,
                         ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          const Text(
+                            'TIẾP TỤC\nHỌC BÀI',
+                            style: TextStyle(
+                              fontFamily: 'Archivo',
+                              fontWeight: FontWeight.w800,
+                              fontSize: 17,
+                              height: 1.41, // equivalent to line-height: 24px
+                              letterSpacing: -0.02,
+                              color: Colors.white,
+                              shadows: [
+                                Shadow(
+                                  color: Colors.black12,
+                                  offset: Offset(0, 4),
+                                  blurRadius: 4,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.25),
+                                  offset: const Offset(0, 4),
+                                  blurRadius: 4,
+                                ),
+                                BoxShadow(
+                                  color: Colors.white.withOpacity(0.3),
+                                  offset: const Offset(-2, -1),
+                                  blurRadius: 6,
+                                ),
+                              ],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Icon(
+                              Icons.play_circle_fill_outlined,
+                              color: Color(0xFF98C1DC),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                  // child: Column(
-                  //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  //   children: [
-                  //     ClipRRect(
-                  //       borderRadius: BorderRadius.circular(15),
-                  //       child: Image.asset(
-                  //         'lib/resources/images/hoaaa.jpeg',
-                  //         height: 80,
-                  //         fit: BoxFit.cover,
-                  //       ),
-                  //     ),
-                  //     const Padding(
-                  //       padding: EdgeInsets.only(right: 50),
-                  //       children: [
-                  //         Text(
-                  //           'TIẾP TỤC\nHỌC BÀI',
-                  //           style: TextStyle(
-                  //             fontFamily: 'Archivo',
-                  //             fontWeight: FontWeight.w800,
-                  //             fontSize: 17,
-                  //             height: 1.41, // equivalent to line-height: 24px
-                  //             letterSpacing: -0.02,
-                  //             color: Colors.white,
-                  //             shadows: [
-                  //               Shadow(
-                  //                 color: Colors.black12,
-                  //                 offset: Offset(0, 4),
-                  //                 blurRadius: 4,
-                  //               ),
-                  //             ],
-                  //           ),
-                  //         ),
-                  //         Icon(Icons.play_arrow, color: Colors.white)
-                  //       ],
-                  //     ),
-                  //   ],
-                  // ),
                 ),
               ],
-            )
-            // achievements card
+            ),
+            const SizedBox(height: 35),
+            // Achievements card
+            Container(
+              height: 150,
+              width: 375,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 240, 245, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(-7.0, -6.0),
+                    blurRadius: 7.0,
+                    color: Colors.white.withOpacity(0.6),
+                  ),
+                  BoxShadow(
+                    offset: const Offset(-2.0, -2.0),
+                    blurRadius: 2.0,
+                    color: Colors.white.withOpacity(0.4),
+                  ),
+                  const BoxShadow(
+                    offset: Offset(1.0, 2.0),
+                    blurRadius: 4.0,
+                    color: Color(0xFFA5CDE8),
+                  ),
+                  const BoxShadow(
+                    offset: Offset(4.0, 4.0),
+                    blurRadius: 8.0,
+                    color: Color.fromRGBO(143, 181, 206, 0.75),
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Text(
+                      'THÀNH TỰU',
+                      style: TextStyle(
+                        fontFamily: 'Archivo',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 17,
+                        height: 2.35, // equivalent to line-height: 40pxs
+                        letterSpacing: -0.02,
+                        color: Color(0xFF0F4C75),
+                        shadows: [
+                          Shadow(
+                            color: Color(0xFFE3ECF2),
+                            offset: Offset(0, 2),
+                            blurRadius: 2,
+                          ),
+                        ],
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
-            // statistical board
+            const SizedBox(height: 30),
+            // Statistical board
+            Container(
+              height: 150,
+              width: 375,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 240, 245, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(-7.0, -6.0),
+                    blurRadius: 7.0,
+                    color: Colors.white.withOpacity(0.6),
+                  ),
+                  BoxShadow(
+                    offset: const Offset(-2.0, -2.0),
+                    blurRadius: 2.0,
+                    color: Colors.white.withOpacity(0.4),
+                  ),
+                  const BoxShadow(
+                    offset: Offset(1.0, 2.0),
+                    blurRadius: 4.0,
+                    color: Color(0xFFA5CDE8),
+                  ),
+                  const BoxShadow(
+                    offset: Offset(4.0, 4.0),
+                    blurRadius: 8.0,
+                    color: Color.fromRGBO(143, 181, 206, 0.75),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
