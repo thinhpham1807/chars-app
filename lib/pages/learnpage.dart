@@ -1,6 +1,3 @@
-
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LearnPage extends StatefulWidget {
@@ -19,7 +16,7 @@ class _LearnPageState extends State<LearnPage> {
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Learn Page',
           style: TextStyle(

@@ -10,6 +10,8 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -44,19 +46,18 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-
   Widget _getPage(int index) {
     switch (index) {
       case 0:
-        return HomePage();
+        return const HomePage();
       case 1:
-        return LearnPage();
+        return const LearnPage();
       case 2:
-        return GamePage();
+        return const GamePage();
       case 3:
-        return HomePage();
+        return const HomePage();
       default:
-        return HomePage();
+        return const HomePage();
     }
   }
 }

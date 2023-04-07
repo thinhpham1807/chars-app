@@ -16,10 +16,8 @@ class NavBar extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 240, 245, 249),
       color: const Color.fromARGB(255, 121, 162, 189),
       animationDuration: const Duration(milliseconds: 300),
-
       onTap: (value) {
         //Handle button tap
-        print(value);
         if (value == 0) {
           Navigator.push(
             context,
@@ -58,6 +56,4 @@ class NavBar extends StatelessWidget {
       ],
     );
   }
-
-
 }
