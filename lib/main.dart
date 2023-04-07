@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:chars/pages/homepage.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: _getPage(_selectedIndex),
         bottomNavigationBar: CurvedNavigationBar(
-          height: 65,
+          height: 70,
           backgroundColor: const Color.fromARGB(255, 240, 245, 249),
           color: const Color.fromARGB(255, 121, 162, 189),
           animationDuration: const Duration(milliseconds: 300),
@@ -36,10 +36,10 @@ class _MyAppState extends State<MyApp> {
             });
           },
           items: const [
-            Icon(Icons.home_outlined, size: 30, color: Colors.white),
-            Icon(CupertinoIcons.book, size: 30, color: Colors.white),
-            Icon(Icons.casino_outlined, size: 30, color: Colors.white),
-            Icon(CupertinoIcons.camera, size: 30, color: Colors.white),
+            Icon(Icons.home_outlined, size: 40, color: Colors.white),
+            Icon(CupertinoIcons.book, size: 40, color: Colors.white),
+            Icon(Icons.casino_outlined, size: 40, color: Colors.white),
+            Icon(CupertinoIcons.camera, size: 40, color: Colors.white),
           ],
         ),
       ),
