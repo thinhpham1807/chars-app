@@ -303,21 +303,47 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(left: 20),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 5,
+                    left: 20,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        Text(
+                          'THÀNH TỰU',
+                          style: TextStyle(
+                            fontFamily: 'Archivo',
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 17,
+                            height: 2.35, // equivalent to line-height: 40pxs
+                            letterSpacing: -0.02,
+                            color: Color(0xFF0F4C75),
+                            shadows: [
+                              Shadow(
+                                color: Color(0xFFE3ECF2),
+                                offset: Offset(0, 2),
+                                blurRadius: 2,
+                              ),
+                            ],
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Positioned(
+                    bottom: 30,
+                    right: 15,
                     child: Text(
-                      'THÀNH TỰU',
+                      'STREAK',
                       style: TextStyle(
                         fontFamily: 'Archivo',
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.w700,
-                        fontSize: 17,
-                        height: 2.35, // equivalent to line-height: 40pxs
-                        letterSpacing: -0.02,
+                        fontSize: 15,
                         color: Color(0xFF0F4C75),
                         shadows: [
                           Shadow(
@@ -327,9 +353,40 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ],
                       ),
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.right,
                     ),
                   ),
+                  const Positioned(
+                    bottom: 10,
+                    right: 15,
+                    child: Text(
+                      '34 NGÀY',
+                      style: TextStyle(
+                        fontFamily: 'Archivo',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 20,
+                        color: Color(0xFF0F4C75),
+                        shadows: [
+                          Shadow(
+                            color: Color(0xFFE3ECF2),
+                            offset: Offset(0, 2),
+                            blurRadius: 2,
+                          ),
+                        ],
+                      ),
+                      textAlign: TextAlign.right,
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 10,
+                    right: 78,
+                    child: Image.asset(
+                      'lib/resources/images/streak.png',
+                      height: 60,
+                      fit: BoxFit.cover,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -362,6 +419,38 @@ class _HomePageState extends State<HomePage> {
                     offset: Offset(4.0, 4.0),
                     blurRadius: 8.0,
                     color: Color.fromRGBO(143, 181, 206, 0.75),
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(right: 235),
+                    child: Text(
+                      'THỐNG KÊ',
+                      style: TextStyle(
+                        fontFamily: 'Archivo',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 17,
+                        height: 2.35, // equivalent to line-height: 40pxs
+                        letterSpacing: -0.02,
+                        color: Color(0xFF0F4C75),
+                        shadows: [
+                          Shadow(
+                            color: Color(0xFFE3ECF2),
+                            offset: Offset(0, 2),
+                            blurRadius: 2,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Image.asset(
+                    'lib/resources/images/statistic_board.png',
+                    height: 100,
+                    fit: BoxFit.cover,
                   ),
                 ],
               ),
