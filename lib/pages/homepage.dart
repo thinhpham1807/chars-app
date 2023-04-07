@@ -114,19 +114,29 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   child: Column(
-                    children: const [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(14, 20, 14, 0),
-                        child: Text(
-                          'BẠN CÓ BIẾT?',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'Andika New Basic',
-                            color: Color(0xff0f4c75),
-                            letterSpacing: -0.2,
-                          ),
+                    children: [
+                      const Text(
+                        'BẠN CÓ BIẾT?',
+                        style: TextStyle(
+                          fontFamily: 'Archivo',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 17,
+                          height: 2.35, // equivalent to line-height: 40px
+                          letterSpacing: -0.02,
+                          color: Color(0xFF0F4C75),
+                          shadows: [
+                            Shadow(
+                              color: Color(0xFFE3ECF2),
+                              offset: Offset(0, 2),
+                              blurRadius: 2,
+                            ),
+                          ],
                         ),
+                        textAlign: TextAlign.center,
+                      ),
+                      Image.asset(
+                        'lib/resources/images/marie_curie.jpeg',
+                        height: 20,
                       ),
                     ],
                   ),
@@ -160,32 +170,27 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 25, 30, 15),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text(
-                          'TIẾP TỤC\nHỌC BÀI',
-                          style: TextStyle(
-                            fontFamily: 'Archivo',
-                            fontWeight: FontWeight.w800,
-                            fontSize: 17,
-                            height: 1.41, // equivalent to line-height: 24px
-                            letterSpacing: -0.02,
-                            color: Colors.white,
-                            // shadows: [
-                            //   Shadow(
-                            //     color: Colors.black.withOpacity(0.25),
-                            //     offset: Offset(0, 4),
-                            //     blurRadius: 4,
-                            //   ),
-                            // ],
-                          ),
+                  child: Column(
+                    children: const [
+                      Text(
+                        'TIẾP TỤC\nHỌC BÀI',
+                        style: TextStyle(
+                          fontFamily: 'Archivo',
+                          fontWeight: FontWeight.w800,
+                          fontSize: 17,
+                          height: 1.41, // equivalent to line-height: 24px
+                          letterSpacing: -0.02,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black12,
+                              offset: Offset(0, 4),
+                              blurRadius: 4,
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -196,7 +201,6 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-
     );
   }
 }
