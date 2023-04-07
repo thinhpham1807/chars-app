@@ -49,15 +49,19 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 25),
-
             // search bar
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 44.0),
               child: Container(
+                height: 40,
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple[100],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: const Color.fromARGB(
+                        255, 206, 229, 251), //rgba(206, 229, 251, 1)
+                    width: 2,
+                  ),
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
@@ -68,8 +72,25 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            // fact card and continous study
 
+            const SizedBox(height: 30),
+
+            // fact card and continous study
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  height: 170,
+                  width: 170,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 170,
+                  width: 170,
+                  color: Colors.red,
+                ),
+              ],
+            )
             // achievements card
 
             // statistical board
