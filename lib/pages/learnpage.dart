@@ -190,7 +190,7 @@ List<Topic> data = [
 
             const SizedBox(height: 25),
             const Text(
-              'Topic',
+              'Học bài theo chương',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,

@@ -1,5 +1,6 @@
 import 'package:chars/pages/gamepage.dart';
 import 'package:chars/pages/learnpage.dart';
+import 'package:chars/pages/questionPage.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _MyAppState extends State<MyApp> {
       case 2:
         return const GamePage();
       case 3:
-        return const HomePage();
+        return const QuestionPage();
       default:
         return const HomePage();
     }
