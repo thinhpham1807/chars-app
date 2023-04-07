@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of India?",
+        "options": [
+            {"id": "A", "value": "Delhi"},
+            {"id": "B", "value": "Mumbai"},
+            {"id": "C", "value": "Kolkata"},
+            {"id": "D", "value": "Chennai"}
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 2,
+        "question": "What is the capital of USA?",
+        "options": [
+            {"id": "A", "value": "New York"},
+            {"id": "B", "value": "Washington DC"},
+            {"id": "C", "value": "Los Angeles"},
+            {"id": "D", "value": "Chicago"}
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 3,
+        "question": "What is the capital of Australia?",
+        "options": [
+            {"id": "A", "value": "Sydney"},
+            {"id": "B", "value": "Melbourne"},
+            {"id": "C", "value": "Canberra"},
+            {"id": "D", "value": "Perth"}
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 4,
+        "question": "What is the capital of Canada?",
+        "options": [
+            {"id": "A", "value": "Toronto"},
+            {"id": "B", "value": "Vancouver"},
+            {"id": "C", "value": "Ottawa"},
+            {"id": "D", "value": "Montreal"}
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 5,
+        "question": "What is the capital of France?",
+        "options": [
+            {"id": "A", "value": "Paris"},
+            {"id": "B", "value": "Marseille"},
+            {"id": "C", "value": "Lyon"},
+            {"id": "D", "value": "Toulouse"}
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 6,
+        "question": "What is the capital of Germany?",
+        "options": [
+            {"id": "A", "value": "Berlin"},
+            {"id": "B", "value": "Hamburg"},
+            {"id": "C", "value": "Munich"},
+            {"id": "D", "value": "Cologne"}
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 7,
+        "question": "What is the capital of Italy?",
+        "options": [
+            {"id": "A", "value": "Rome"},
+            {"id": "B", "value": "Milan"},
+            {"id": "C", "value": "Naples"},
+            {"id": "D", "value": "Turin"}
+        ],
+        "answer": "A"
+    }
+]
